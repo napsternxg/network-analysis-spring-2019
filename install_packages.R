@@ -1,6 +1,3 @@
-* Install R Studio from: https://www.rstudio.com/products/rstudio/download/#download
-* Open R Studio and type the following lines in R Console: 
-```r
 install.packages('statnet')
 install.packages('ndtv')
 install.packages('htmlwidgets')
@@ -11,7 +8,3 @@ library(ndtv)
 library(htmlwidgets)
 library(latticeExtra)
 library(tsna)
-
-```
-
-If any error occurs let us know. 
