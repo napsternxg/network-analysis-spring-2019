@@ -25,4 +25,12 @@ library(tsna)
 
 ```
 
+
+Add `, dependencies = T` to each command. E.g. 
+
+```r
+install.packages("network", dependencies = T)
+```
+
+
 If any error occurs let us know. 
