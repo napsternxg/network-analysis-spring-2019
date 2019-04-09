@@ -6,7 +6,7 @@
 * Open R Studio and type the following lines in R Console: 
 ```r
 install.packages("network")
-install.packages("numderiv")
+install.packages("numDeriv")
 install.packages('statnet')
 install.packages('ndtv')
 install.packages('htmlwidgets')
@@ -15,7 +15,7 @@ install.packages("sna")
 install.packages("tsna")
 
 library(network)
-library(numderiv)
+library(numDeriv)
 library(statnet)
 library(ndtv)
 library(htmlwidgets)
