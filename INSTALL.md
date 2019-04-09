@@ -5,15 +5,22 @@
 * Install R Studio from: https://www.rstudio.com/products/rstudio/download/#download
 * Open R Studio and type the following lines in R Console: 
 ```r
+install.packages("network")
+install.packages("numderiv")
 install.packages('statnet')
 install.packages('ndtv')
 install.packages('htmlwidgets')
 install.packages('latticeExtra')
+install.packages("sna")
 install.packages("tsna")
+
+library(network)
+library(numderiv)
 library(statnet)
 library(ndtv)
 library(htmlwidgets)
 library(latticeExtra)
+library(sna)
 library(tsna)
 
 ```
