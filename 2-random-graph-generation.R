@@ -26,11 +26,11 @@ length(temp)
 p_vals<-10^(temp)
 p_vals
 
-n_nodes <- length(p_vals)
+num_pvals <- length(p_vals)
 
 ## create different random graphs for different values of p
 
-for(i in 1:n_nodes){
+for(i in 1:num_pvals){
   wgNets[[i]]<-rgws(n=1,nv=50,d=1,z=2,p=p_vals[i])
 }
 
@@ -40,10 +40,10 @@ gplot(wgNets[[17]])
 
 # get max value of geodistance for each graph
 
-l_vals<-vector(length=17)
+l_vals<-vector(length=num_pvals)
 geodist(wgNets[[1]])$gdist
 geodist(wgNets[[17]])$gdist
-for(i in 1:17){
+for(i in 1:num_pvals){
   temp<-geodist(wgNets[[i]])$gdist
   temp[which(temp=="Inf")]<-0
   l_vals[i]<-max(temp)
@@ -53,8 +53,8 @@ l_vals<-l_vals/l_vals[1]
 
 ##now for the clustering coefficient
 triad.census(wgNets[[1]],mode="graph")
-c_vals<-vector(length=17)
-for(i in 1:17){
+c_vals<-vector(length=num_pvals)
+for(i in 1:num_pvals){
   temp<-triad.census(wgNets[[i]],mode="graph")
   c_vals[i]<-temp[4]/(3*temp[4]+temp[3])
 }

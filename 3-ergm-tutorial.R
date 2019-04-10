@@ -32,3 +32,4 @@ exp(flomodel.01$coef)/(1+exp(flomodel.01$coef))
 # This is same as the network density.
 
 gden(flomarriage)
+
